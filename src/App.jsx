@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_KEY = "YOUR_API_KEY"; // Replace with your Finnhub API key
+const API_KEY = process.env.FINNHUB_API_KEY;
 
 const StockTracker = () => {
   const [symbol, setSymbol] = useState("AAPL"); // Default stock symbol
